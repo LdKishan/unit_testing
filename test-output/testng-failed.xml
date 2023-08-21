@@ -5,7 +5,7 @@
     <classes>
       <class name="com.metaex.UnitTest">
         <methods>
-          <include name="TC004"/>
+          <include name="TC002"/>
           <include name="BT"/>
         </methods>
       </class> <!-- com.metaex.UnitTest -->

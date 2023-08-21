@@ -4,6 +4,7 @@ import org.aspectj.lang.annotation.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.Select;
@@ -18,21 +19,17 @@ public class UnitTest {
   public void BT() {
 	  
 	  
-	  dr = new ChromeDriver();
+	  dr = new EdgeDriver();
 	  dr.get("http://localhost:9093/");
-
       dr.manage().window().maximize();
-//	  System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe"); // Set the path to your geckodriver executable
-//	  FirefoxOptions options = new FirefoxOptions();
-//	  options.setBinary("./Drivers/firefox.exe"); // Set the path to your Firefox binary
-//	  WebDriver wb = new FirefoxDriver(options);
-//
-// 
-//	  
-//	  wb.get("https://www.youtube.com/");
+
+  
+
   }
   @Test(priority=1)
   public void TC001() throws InterruptedException {
+	  
+	 
       
       Thread.sleep(1000);
 	  
@@ -51,13 +48,13 @@ public class UnitTest {
 	  
 	  dr.findElement(By.xpath("/html/body/nav/div/div[2]/ul/li[4]/button/span/a")).click();
       Thread.sleep(2000);
-	  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("git@gmail.com");
+	  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("giteeaa@gmail.com");
       Thread.sleep(2000);
-	  dr.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("1247571451");
+	  dr.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("1241776511");
       Thread.sleep(2000);
-	  dr.findElement(By.xpath("/html/body/div/div/form/button")).click();
+	  dr.findElement(By.xpath("//button[@type='submit']")).click();
 	  String exp = "DATA SAVED SUCCESSFULLY!";
-	  String act = dr.findElement(By.xpath("/html/body/script")).getText();
+	  String act = dr.findElement(By.linkText("/html/body/text()")).getText();
 	  if(exp.equals(act)) 
 	  {
 		  System.out.println("Customer Registartion Sucessfull");
@@ -69,9 +66,9 @@ public class UnitTest {
 
 		  
 
-		  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("git@gmail.com");
+		  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("giteeaa@gmail.com");
 	      Thread.sleep(2000);
-		  dr.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("1247571451");
+		  dr.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("1241776511");
 	      Thread.sleep(2000);
 		  dr.findElement(By.xpath("/html/body/div/div/form/button")).click();
 
@@ -82,17 +79,17 @@ public class UnitTest {
 
 		  
 	      Thread.sleep(2000);
-		  dr.findElement(By.xpath("/html/body/div/form/div[1]/input")).sendKeys("aKiishanasa Kumar");
+		  dr.findElement(By.xpath("/html/body/div/form/div[1]/input")).sendKeys("aKiishanasaaa Kumar");
 	      Thread.sleep(2000);
 		  dr.findElement(By.xpath("/html/body/div/form/div[2]/input")).sendKeys("Sahsswu");
 	      Thread.sleep(2000);
-		  dr.findElement(By.xpath("/html/body/div/form/div[3]/input[1]")).sendKeys("25/02/1998");
+		  dr.findElement(By.xpath("/html/body/div/form/div[3]/input[1]")).sendKeys("25/02/1997");
 	      Thread.sleep(2000);
 		  dr.findElement(By.xpath("/html/body/div/form/div[3]/input[2]")).click();
 	      Thread.sleep(2000);
-		  dr.findElement(By.xpath("/html/body/div/form/div[4]/input")).sendKeys("git@gmail.com");
+		  dr.findElement(By.xpath("/html/body/div/form/div[4]/input")).sendKeys("giteeaa@gmail.com");
 	      Thread.sleep(2000);
-		  dr.findElement(By.xpath("/html/body/div/form/div[5]/input")).sendKeys("8917222174");
+		  dr.findElement(By.xpath("/html/body/div/form/div[5]/input")).sendKeys("1241776511");
 	      Thread.sleep(2000);
 	      Select objSelect = new Select(dr.findElement(By.xpath("/html/body/div/form/div[6]/select")));
 	      objSelect.selectByVisibleText("Class XII");
