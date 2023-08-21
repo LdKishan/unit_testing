@@ -18,10 +18,11 @@ public class UnitTest {
   @BeforeTest
   public void BT() {
 	  
-	  
-	  dr = new EdgeDriver();
+	 System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+	  dr =  new EdgeDriver();
 	  dr.get("http://localhost:9093/");
       dr.manage().window().maximize();
+
 
   
 
