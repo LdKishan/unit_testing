@@ -138,7 +138,7 @@
 
 			<artifactId>selenium-java</artifactId>
 
-			<version>4.9.0</version>
+			<version>3.141.59</version>
 
 		</dependency>
 
