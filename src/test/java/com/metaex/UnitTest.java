@@ -19,8 +19,8 @@ public class UnitTest {
   public void BT() {
 	  
 	
-	 System.setProperty("webdriver.geckodriver.driver", "/Drivers/geckodriver.exe");  
-    dr=new FirefoxDriver(); 
+	 System.setProperty("webdriver.chrome.driver", "/Drivers/chrome.exe");  
+    dr=new ChromeDriver();
 	  dr.get("http://localhost:9093/");
       dr.manage().window().maximize();
 
