@@ -19,7 +19,8 @@ public class UnitTest {
   public void BT() {
 	  
 	
-	  dr =  new FirefoxDriver();
+	 System.setProperty("webdriver.chrome.driver", "/root/drivers/chromedriver.exe");  
+    dr=new ChromeDriver(); 
 	  dr.get("http://localhost:9093/");
       dr.manage().window().maximize();
 
