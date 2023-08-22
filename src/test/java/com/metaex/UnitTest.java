@@ -14,13 +14,13 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UnitTest {
-	WebDriver dr;
+	System.setProperty("webdriver.chrome.driver", "/Drivers/chrome.exe");  
+    WebDriver dr=new ChromeDriver();
   @BeforeTest
   public void BT() {
 	  
 	
-	 System.setProperty("webdriver.chrome.driver", "/Drivers/chrome.exe");  
-    dr=new ChromeDriver();
+	 
 	  dr.get("http://localhost:9093/");
       dr.manage().window().maximize();
 
