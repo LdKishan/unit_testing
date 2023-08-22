@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UnitTest {
-	System.setProperty("webdriver.chrome.driver", "/Drivers/chrome.exe");  
+	  
     WebDriver dr;
   @BeforeTest
   public void BT() {
