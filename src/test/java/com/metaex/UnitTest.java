@@ -49,7 +49,7 @@ public class UnitTest {
 	  
 	  dr.findElement(By.xpath("/html/body/nav/div/div[2]/ul/li[4]/button/span/a")).click();
       Thread.sleep(2000);
-	  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("giteeaa@gmail.com");
+	  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("giteeaaa@gmail.com");
       Thread.sleep(2000);
 	  dr.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("1241776511");
       Thread.sleep(2000);
@@ -67,7 +67,7 @@ public class UnitTest {
 
 		  
 
-		  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("giteeaa@gmail.com");
+		  dr.findElement(By.xpath("/html/body/div/div/form/div[1]/input")).sendKeys("giteeaaa@gmail.com");
 	      Thread.sleep(2000);
 		  dr.findElement(By.xpath("/html/body/div/div/form/div[2]/input")).sendKeys("1241776511");
 	      Thread.sleep(2000);
