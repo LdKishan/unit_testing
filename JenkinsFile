@@ -9,7 +9,7 @@ tools{
 	stage('SCM Checkout'){
 
 	steps{
-	git branch: 'master', url: 'https://github.com/LdKishan/unit_testing.git'
+	git branch: 'main', url: 'https://github.com/LdKishan/unit_testing.git'
 	}
 	} 
 stage('Build'){
