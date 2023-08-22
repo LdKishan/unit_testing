@@ -19,7 +19,7 @@ public class UnitTest {
   public void BT() {
 	  
 	
-	  dr =  new EdgeDriver();
+	  dr =  new FirefoxDriver();
 	  dr.get("http://localhost:9093/");
       dr.manage().window().maximize();
 
